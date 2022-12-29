@@ -1,8 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import { GAMES, STANDINGS } from "./utils/contants";
+import GameSchedule from "./components/GameSchedule";
+import Standings from "./components/Standings";
+import PlayerStats from "./components/PlayerStats";
 
 function App() {
+  const [selectedNav, setSelectedNav] = useState<string>("");
+
   return (
     <div className="App">
       <div className="heading__container">
@@ -12,7 +18,22 @@ function App() {
         />
         <span>NBA APP</span>
       </div>
-      <Navbar />
+
+      <Navbar selectedNav={selectedNav} setSelectedNav={setSelectedNav} />
+      <hr />
+
+      <div className="main__container">
+        <span>{selectedNav}</span>
+        <div className="content__container">
+          {selectedNav === GAMES ? (
+            <GameSchedule />
+          ) : selectedNav === STANDINGS ? (
+            <Standings />
+          ) : (
+            <PlayerStats />
+          )}
+        </div>
+      </div>
     </div>
   );
 }

@@ -12,10 +12,10 @@
     background-color: #F4F5FB;
     border-radius: 10px;
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 14px;
     align-items: center;
     margin: 0 5px;
     width: 50%;
@@ -25,4 +25,20 @@
 .navbar__item img {
     width: 50px;
     height: 50px;
+}
+
+.navbar__item:hover {
+    cursor: pointer;
+}
+
+.navbar__item:active {
+    box-shadow: 0 0 2px black;
+}
+
+.navbar__item:focus {
+    background-color: rgb(227, 225, 225);
+}
+
+.content__button--game {
+    margin-top: 20px;
 }
