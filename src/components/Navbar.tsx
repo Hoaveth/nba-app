@@ -17,7 +17,7 @@ const Navbar = ({ selectedNav, setSelectedNav }: Props) => {
       <div
         className="navbar__item"
         onClick={() => setSelectedNav(GAMES)}
-        tabindex="-1"
+        tabIndex={-1}
       >
         <img src={CalendarIcon} />
         <span>Games</span>
@@ -25,7 +25,7 @@ const Navbar = ({ selectedNav, setSelectedNav }: Props) => {
       <div
         className="navbar__item"
         onClick={() => setSelectedNav(STANDINGS)}
-        tabindex="-1"
+        tabIndex={-1}
       >
         <img src={StatsIcon} />
         <span>Standings</span>
@@ -33,7 +33,7 @@ const Navbar = ({ selectedNav, setSelectedNav }: Props) => {
       <div
         className="navbar__item"
         onClick={() => setSelectedNav(PLAYERS)}
-        tabindex="-1"
+        tabIndex={-1}
       >
         <img src={PlayerIcon} />
         <span>Players</span>

@@ -1,5 +1,13 @@
 export interface Games{
     id: number;
-    todo: string;
-    isDone: boolean;
+    date: string;
+    home_team: object;
+    home_team_score: number;
+    period: number;
+    postseason: boolean;
+    season: number;
+    status: string;
+    time: string;
+    visitor_team: object;
+    visitor_team_score: number;
 }

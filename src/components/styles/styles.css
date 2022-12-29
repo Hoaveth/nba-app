@@ -36,9 +36,14 @@
 }
 
 .navbar__item:focus {
-    background-color: rgb(227, 225, 225);
+    background-color: #FF5733;
+    color: white;
 }
 
 .content__button--game {
     margin-top: 20px;
+}
+
+.loading__text {
+    font-size: 14px !important;
 }

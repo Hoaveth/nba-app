@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { GAMES, STANDINGS } from "./utils/contants";
-import GameSchedule from "./components/GameSchedule";
+import GameResults from "./components/GameResults";
 import Standings from "./components/Standings";
 import PlayerStats from "./components/PlayerStats";
 
@@ -26,7 +26,7 @@ function App() {
         <span>{selectedNav}</span>
         <div className="content__container">
           {selectedNav === GAMES ? (
-            <GameSchedule />
+            <GameResults />
           ) : selectedNav === STANDINGS ? (
             <Standings />
           ) : (
