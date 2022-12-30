@@ -47,3 +47,31 @@
 .loading__text {
     font-size: 14px !important;
 }
+
+.card__container {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #F4F5FB;
+    height: auto;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__hometeam img, .card__awayteam img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.card__hometeam, .card__awayteam {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__status {
+    text-align: left;
+    font-size: 14px !important;
+}

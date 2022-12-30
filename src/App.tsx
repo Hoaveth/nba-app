@@ -7,7 +7,7 @@ import Standings from "./components/Standings";
 import PlayerStats from "./components/PlayerStats";
 
 function App() {
-  const [selectedNav, setSelectedNav] = useState<string>("");
+  const [selectedNav, setSelectedNav] = useState<string>(GAMES);
 
   return (
     <div className="App">
@@ -23,7 +23,7 @@ function App() {
       <hr />
 
       <div className="main__container">
-        <span>{selectedNav}</span>
+        <span className="selected">{selectedNav}</span>
         <div className="content__container">
           {selectedNav === GAMES ? (
             <GameResults />
