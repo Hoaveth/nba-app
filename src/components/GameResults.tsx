@@ -13,9 +13,12 @@ const GameResults = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    let date = moment(new Date()).format(DATE_FORMAT);
+    let date = new Date();
+    let previous = new Date(date.getTime());
+    previous.setDate(date.getDate() - 1);
+    let finalDate = moment(previous).format(DATE_FORMAT);
 
-    API.getGameResults(date).then((response: any) => {
+    API.getGameResults(finalDate).then((response: any) => {
       if (response.data) {
         setGames(response.data);
         setIsLoading(false);

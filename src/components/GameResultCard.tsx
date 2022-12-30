@@ -8,7 +8,6 @@ interface Props {
 }
 
 const GameResultCard = ({ game }: Props) => {
-  console.log(game);
   return (
     <>
       <span className="card__status">
