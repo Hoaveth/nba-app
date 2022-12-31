@@ -32,7 +32,7 @@ const GameResultCard = ({ game }: Props) => {
             src={TEAM_LOGO[game.visitor_team.full_name]}
             className="card__logo"
           />
-          <span>{game.home_team_score}</span>
+          <span>{game.visitor_team_score}</span>
         </div>
       </div>
     </>
