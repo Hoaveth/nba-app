@@ -14,7 +14,7 @@ const GameResultCard = ({ game }: Props) => {
         {game.status + " - "}{" "}
         {game.period === 0
           ? "Not Started"
-          : game.period === 4
+          : game.period === 4 && game.status === "Final"
           ? "Game Ended"
           : "On-going"}
       </span>

@@ -36,5 +36,7 @@ export const TEAM_LOGO:team_logos = {
     "New Orleans Pelicans": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/New_Orleans_Pelicans_logo.svg/230px-New_Orleans_Pelicans_logo.svg.png",
     "Minnesota Timberwolves": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Minnesota_Timberwolves_logo.svg/200px-Minnesota_Timberwolves_logo.svg.png",
     "Oklahoma City Thunder": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/200px-Oklahoma_City_Thunder.svg.png",
-    "Brooklyn Nets": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/170px-Brooklyn_Nets_newlogo.svg.png"
+    "Brooklyn Nets": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/170px-Brooklyn_Nets_newlogo.svg.png",
+    "Boston Celtics": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/190px-Boston_Celtics.svg.png"
+
 }
