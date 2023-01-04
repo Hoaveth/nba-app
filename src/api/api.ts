@@ -16,5 +16,20 @@ export const API = {
             console.log(error)
             return error;
         }
+    },
+        getPlayers: async function (): Promise<Response | unknown> {
+
+        let response : Response;
+        try{
+            response = await api.request({
+                    url: `https://www.balldontlie.io/api/v1/players`,
+                    method: 'GET'
+            })
+            console.log(response.data)
+         return response.data;
+        }catch(error){
+            console.log(error)
+            return error;
+        }
     }
 }
