@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { API } from "../api/api";
 
-const PlayerStats = () => {
+const Players = () => {
   useEffect(() => {
-    API.getPlayers().then((response: any) => {
+    API.getAllPlayers().then((response: any) => {
       if (response.data) {
         console.log(response.data);
       }
     });
   });
-  return <div>PlayerStats</div>;
+  return <div>Players</div>;
 };
 
-export default PlayerStats;
+export default Players;

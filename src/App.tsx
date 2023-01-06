@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import { GAMES, STANDINGS } from "./utils/contants";
 import GameResults from "./components/GameResults";
 import Standings from "./components/Standings";
-import PlayerStats from "./components/PlayerStats";
+import Players from "./components/Players";
 
 function App() {
   const [selectedNav, setSelectedNav] = useState<string>(GAMES);
@@ -30,7 +30,7 @@ function App() {
           ) : selectedNav === STANDINGS ? (
             <Standings />
           ) : (
-            <PlayerStats />
+            <Players />
           )}
         </div>
       </div>

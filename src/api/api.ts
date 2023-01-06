@@ -49,7 +49,7 @@ export const API = {
     let response: Response;
     try {
       response = await api.request({
-        url: `https://www.balldontlie.io/api/v1/players`,
+        url: `https://www.balldontlie.io/api/v1/players?per_page=100`,
         method: "GET",
       });
       return response.data;
