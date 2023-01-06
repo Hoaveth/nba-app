@@ -26,7 +26,6 @@ export const API = {
         url: `https://www.balldontlie.io/api/v1/players`,
         method: "GET",
       });
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -40,7 +39,19 @@ export const API = {
         url: `https://www.balldontlie.io/api/v1/stats`,
         method: "GET",
       });
-      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
+  },
+  getAllPlayers: async function (): Promise<Response | unknown> {
+    let response: Response;
+    try {
+      response = await api.request({
+        url: `https://www.balldontlie.io/api/v1/players`,
+        method: "GET",
+      });
       return response.data;
     } catch (error) {
       console.log(error);
